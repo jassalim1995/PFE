@@ -9,23 +9,22 @@ public class Besoins {
 	};
 	private Date dateSaisie;
 	private String description;
-	private Ao Ao;
-	private List<Cv> CVs;
+	private Ao ao;
+	private List<Cv> cvs;
 	private Statut statut;
 	private String trigramme;
 	
 	public Besoins() {
 		super();
-		this.CVs = new ArrayList<>();
+		this.cvs = new ArrayList<>();
 	}
 
-	public Besoins(Date dateSaisie, String description, com.Backend.Test.Model.Ao ao, List<Cv> cVs, Statut statut,
-			String trigramme) {
+	public Besoins(Date dateSaisie, String description, Ao ao, List<Cv> cVs, Statut statut,String trigramme) {
 		super();
 		this.dateSaisie = dateSaisie;
 		this.description = description;
-		Ao = ao;
-		CVs = cVs;
+		this.ao = ao;
+		this.cvs = cVs;
 		this.statut = statut;
 		this.trigramme = trigramme;
 	}
@@ -47,19 +46,19 @@ public class Besoins {
 	}
 
 	public Ao getAo() {
-		return Ao;
+		return ao;
 	}
 
 	public void setAo(Ao ao) {
-		Ao = ao;
+		this.ao = ao;
 	}
 
 	public List<Cv> getCVs() {
-		return CVs;
+		return cvs;
 	}
 
 	public void setCVs(List<Cv> cVs) {
-		CVs = cVs;
+		this.cvs = cVs;
 	}
 
 	public Statut getStatut() {

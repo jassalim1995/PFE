@@ -18,18 +18,18 @@ public class Clients {
 	private String notes;
 	private String precisions;
 	private Date dateMiseAJour;
-	private String Statut;
+	private String statut;
 	private String trigramme;
-	private List<Contact> Contacts;
+	private Contact contacts;
 	
 	public Clients() {
 		super();
-		this.Contacts = new ArrayList<>();
+		//this.Contacts = new ArrayList<>();
 	}
 
 	public Clients(String nom, String secteur, String activite, String adresse, String ville, String codePostal,
 			String telephone1, String telephone2, String email, String linkedIn, String notes, String precisions,
-			Date dateMiseAJour, String statut, String trigramme, List<Contact> contacts) {
+			Date dateMiseAJour, String statut, String trigramme, Contact contacts) {
 		super();
 		this.nom = nom;
 		this.secteur = secteur;
@@ -44,9 +44,9 @@ public class Clients {
 		this.notes = notes;
 		this.precisions = precisions;
 		this.dateMiseAJour = dateMiseAJour;
-		Statut = statut;
+		this.statut = statut;
 		this.trigramme = trigramme;
-		Contacts = contacts;
+		this.contacts = contacts;
 	}
 
 	public String getNom() {
@@ -154,11 +154,11 @@ public class Clients {
 	}
 
 	public String getStatut() {
-		return Statut;
+		return statut;
 	}
 
 	public void setStatut(String statut) {
-		Statut = statut;
+		this.statut = statut;
 	}
 
 	public String getTrigramme() {
@@ -169,12 +169,12 @@ public class Clients {
 		this.trigramme = trigramme;
 	}
 
-	public List<Contact> getContacts() {
-		return Contacts;
+	public Contact getContacts() {
+		return contacts;
 	}
 
-	public void setContacts(List<Contact> contacts) {
-		Contacts = contacts;
+	public void setContacts(Contact contacts) {
+		this.contacts = contacts;
 	}
 	
 	

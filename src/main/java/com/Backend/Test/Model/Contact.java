@@ -14,26 +14,26 @@ public class Contact {
 	private String observation;
 	private String outils;
 	private String linkedIn;
-	private List<Rappel> Rappels;
+	private List<Rappel> rappels;
 	private List<Push> push;
 	private String plaquetteLibelle;
 	private Date plaquetteDate;
 	private List<Conversations> conversations;
-	private Besoins Besoins;
+	private Besoins besoins;
 	private Date dateMiseAJour;
 	private String trigramme;
 
 	public Contact() {
 		super();
-		this.Rappels = new ArrayList<>();
+		this.rappels = new ArrayList<>();
 		this.conversations = new ArrayList<>();
 		this.push = new ArrayList<>();
 	}
 
-	public Contact(String statut, String nom, String prenom, String titre, String telephone1, String telephone2, String mobile,
-			String email, String observation, String outils, String linkedIn, List<Rappel> rappels, List<Push> push,
-			String plaquetteLibelle, Date plaquetteDate, List<Conversations> conversations,
-			com.Backend.Test.Model.Besoins besoins, Date dateMiseAJour, String trigramme) {
+	public Contact(String statut, String nom, String prenom, String titre, String telephone1, String telephone2,
+			String mobile, String email, String observation, String outils, String linkedIn, List<Rappel> rappels,
+			List<Push> push, String plaquetteLibelle, Date plaquetteDate, List<Conversations> conversations,
+			Besoins besoins, Date dateMiseAJour, String trigramme) {
 		super();
 		this.statut = statut;
 		this.nom = nom;
@@ -46,12 +46,12 @@ public class Contact {
 		this.observation = observation;
 		this.outils = outils;
 		this.linkedIn = linkedIn;
-		Rappels = rappels;
+		this.rappels = rappels;
 		this.push = push;
 		this.plaquetteLibelle = plaquetteLibelle;
 		this.plaquetteDate = plaquetteDate;
 		this.conversations = conversations;
-		Besoins = besoins;
+		this.besoins = besoins;
 		this.dateMiseAJour = dateMiseAJour;
 		this.trigramme = trigramme;
 	}
@@ -145,11 +145,11 @@ public class Contact {
 	}
 
 	public List<Rappel> getRappels() {
-		return Rappels;
+		return rappels;
 	}
 
 	public void setRappels(List<Rappel> rappels) {
-		Rappels = rappels;
+		this.rappels = rappels;
 	}
 
 	public List<Push> getPush() {
@@ -185,11 +185,11 @@ public class Contact {
 	}
 
 	public Besoins getBesoins() {
-		return Besoins;
+		return besoins;
 	}
 
 	public void setBesoins(Besoins besoins) {
-		Besoins = besoins;
+		this.besoins = besoins;
 	}
 
 	public Date getDateMiseAJour() {
