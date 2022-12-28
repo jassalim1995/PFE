@@ -1,0 +1,17 @@
+    <div class="col-md-1">
+      <!-- Material input -->
+      <div>
+       
+        <label for="inputPassword4MD">Qualité CV</label>
+        <select class="browser-default custom-select" (change)="onChange($event.target.value)"
+          [ngModel]="consultant.code_qualite"
+          [ngClass]="{ 'browser-default custom-selectred ng-valid ng-dirty ng-touched': red, 'browser-default custom-selectgreen ng-valid ng-dirty ng-touched': green,'browser-default custom-selectorange ng-valid ng-dirty ng-touched': orange,  'browser-default custom-selectgray ng-valid ng-dirty ng-touched': gray  }"
+          formControlName="quali" name="quali" style='font-family:Arial, FontAwesome;' id="selectquali">
+          <option value="Jouable" style='color:green;'>&#xf111; &nbsp;Jouable</option>
+          <option value="Moyen" style='color:orange;'>&#xf111; &nbsp;Moyen</option>
+          <option value="Injouable" style='color:red;'>&#xf111; &nbsp;Injouable</option>
+          <option value="Neutre" style='color:gray;'>&#xf111; &nbsp;Neutre</option>
+        </select>
+      </div>
+    </div>
+ 

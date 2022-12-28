@@ -1,0 +1,279 @@
+select  {
+
+  font-family: 'FontAwesome','Roboto';
+  font-size: 13px;
+  hight:7px;
+
+}
+option {
+  font-family: 'FontAwesome','Roboto';
+  font-size: 13px;
+}
+
+tr{
+  font-family: 'Roboto';
+  empty-cells: hide;
+
+}
+h1{
+  font-size:36px
+}
+th{
+  font-family: 'Roboto';
+  font-size: 13px;
+  empty-cells: hide;
+}
+i{
+  font-family: 'FontAwesome','Roboto';
+  font-size: 16px;
+  font-style: normal;
+
+}
+.tit{
+  font-size: 24px;
+}
+h1{
+  font-family: 'Roboto';
+  font-size: 26px;
+  font-weight: bold;
+}
+button {
+
+  color: gray;
+  padding: 4px 8px;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+  background-color: rgba(79, 168, 48, 0.53);
+}
+.a{
+  color: gray;
+  padding: 4px 8px;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+  background-color: #EEEEEE;
+}
+.louta{
+  margin-top: 10px;
+}
+.box{
+  align-self:center;
+  align-items:center;
+  margin: auto;
+  justify-items: center;
+}
+
+.h-screen{
+
+  higth:100%;
+}
+.myStyle{
+  text-align:center; margin-top: 100px;
+}
+
+
+.col-sm{
+  width:3.5rem
+}
+table.table-bordered{
+
+  margin-top:20px;
+  empty-cells: hide;
+  margin: auto;
+  border-collapse: separate;
+}
+table.table-bordered > thead > tr > th{
+  border:1px solid #a9a4b3;
+  empty-cells: hide;
+
+}
+table.table-bordered > tbody > tr > td{
+  border:1px solid #a9a4b3 ;
+  empty-cells: hide !important;
+  border-collapse:collapse;
+  width: 80%;
+}
+
+thead th {
+  background-color: #EEEEEE;
+
+}
+
+
+.table-striped>thead>tr>th, .table-striped>tbody>tr>th, .table-striped>tfoot>tr>th, .table-striped>thead>tr>td, .table-striped>tbody>tr>td, .table-striped>tfoot>tr>td{
+  padding: 2px;
+  text-align: center;
+  align-items:center;
+
+  justify-items: center;
+  hight:8px;
+
+  align-self:center;
+  table-layout: fixed;
+
+
+}
+img{
+
+}
+
+.table-striped>tbody{
+  overflow-y: scroll;
+  height: 900px;
+  width: 100%;
+
+}
+.table-striped > tbody > tr:nth-child(2n) > td, .table-striped > tbody > tr:nth-child(2n) > th {
+  background-color: rgba(219, 224, 204, 0.2);
+}
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+  background-color: white;
+
+}
+
+
+.my-custom-scrollbar {
+  position: relative;
+  height: 900px;
+  overflow-y: scroll;
+}
+
+
+
+table{
+  display:block;
+
+}
+.gh{
+  transform: scale(0.8);
+  margin-right: 10px;
+}
+
+
+.my-custom-scrollbar{
+  overflow-y: auto;
+  height:850px;
+}
+
+.my-custom-scrollbar table{
+  margin-right: 100px;
+  width: 90%;
+  table-layout: fixed;
+
+}
+
+.my-custom-scrollbar table th {
+  text-align: left;
+  top:33px;
+  position: sticky;
+}
+.my-custom-scrollbar table  .zzz th  {
+  text-align: left;
+  top:0px;
+  position: sticky;
+}
+.my-custom-scrollbar table .fff td  {
+  text-align: left;
+  bottom:-20px;
+  left: 2px;
+  position: sticky;
+  border:1px solid #a9a4b3 ;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.div_center{
+  margin-left: auto;
+  margin-right: auto;
+  width: 6em
+}
+.btn-sm{
+  margin-right: 10px;
+}
+h3{
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+.do{
+
+  width: 0;
+  height: 0;
+}
+.inpu{
+  border:1px solid #a9a4b3 ;
+  text-align: center;
+  font-family: 'Roboto','FontAwesome';
+  font-size: 13px;
+  width: 100%;
+  height: 30px;
+}
+.image-upload > input {
+  visibility: hidden;
+  width: 50%;
+  height: 20%
+}
+.tezz{
+  width:55%;
+  line-height: 5px;
+  hight:30px;
+  box-sizing: border-box;
+  font-family: 'FontAwesome','Roboto';
+}
+.form-row{
+  line-height: 5px;
+}
+.moa{
+  width: 40px;
+}
+.m80{
+  width: 100px;
+}
+.m100{
+  width: 130px;
+}
+.m50{
+  width:80px;
+}
+
+.imm{
+  transform: scale(0.35);
+}
+.petit{
+  margin-bottom: 17px;
+}
+.tromb{
+  transform: scale(0.75);
+}
+
+.custom-file-label{
+  margin-right: 100px;
+  margin-top: 3px;
+}
+.custom-file-input {
+  position: relative;
+  z-index: 1;
+  width: 2px;
+  margin-right:16px;
+
+}

@@ -1,0 +1,187 @@
+tr{
+  font-family: 'Roboto';
+  empty-cells: hide;
+  border: black;
+}
+h1{
+  font-size:36px
+}
+th{
+  font-family: 'Roboto';
+  font-size: 13px;
+  empty-cells: hide;
+  border: black;
+}
+.tit{
+  font-size: 24px;
+}
+h1{
+  font-family: 'Roboto';
+  font-size: 26px;
+  font-weight: bold;
+}
+button {
+
+  color: gray;
+  padding: 4px 8px;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+  background-color: rgba(79, 168, 48, 0.53);
+}
+.a{
+  color: gray;
+  padding: 4px 8px;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+  background-color: #EEEEEE;
+}
+
+.box{
+  align-self:center;
+  align-items:center;
+  margin: auto;
+  justify-items: center;
+}
+
+.h-screen{
+
+  higth:100%;
+}
+.myStyle{
+  text-align:center; margin-top: 100px;
+}
+
+
+.col-sm{
+  width:3.5rem
+}
+table.table-bordered{
+
+  margin-top:20px;
+  empty-cells: hide;
+  margin: auto;
+
+}
+table.table-bordered > thead > tr > th{
+  border:1px solid #a9a4b3;
+  empty-cells: hide;
+
+}
+table.table-bordered > tbody > tr > td{
+  border:1px solid #a9a4b3 ;
+  empty-cells: hide !important;
+  border-collapse:collapse;
+
+}
+
+thead th {
+  background-color: #EEEEEE;
+  color: black;
+}
+
+
+.table-striped>thead>tr>th, .table-striped>tbody>tr>th, .table-striped>tfoot>tr>th, .table-striped>thead>tr>td, .table-striped>tbody>tr>td, .table-striped>tfoot>tr>td{
+  padding: 1px;
+  text-align: center;
+  align-items:center;
+  justify-items: center;
+  align-self:center;
+  table-layout: fixed;
+
+
+}
+img{
+  align-self:center;
+  align-items:center;
+  margin: auto;
+  justify-items: center;
+  cursor: pointer;
+
+}
+
+.table-striped>tbody{
+  overflow-y: scroll;
+  height: 100px;
+  width: 100%;
+
+}
+.table-striped > tbody > tr:nth-child(2n) > td, .table-striped > tbody > tr:nth-child(2n) > th {
+  background-color: rgba(219, 224, 204, 0.2);
+}
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+  background-color: white;
+
+}
+
+
+.my-custom-scrollbar {
+  position: relative;
+  height: 250px;
+  overflow-y: scroll;
+}
+
+tr {
+  table-layout: fixed;
+}
+
+table{
+  display:block;
+}
+
+
+td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+.my-custom-scrollbar{
+  overflow-y: auto;
+  height:200px;
+}
+
+.my-custom-scrollbar table{
+  width: 100%;
+  table-layout: fixed;
+
+}
+
+.my-custom-scrollbar table th {
+  text-align: left;
+  top:33px;
+  position: sticky;
+}
+.my-custom-scrollbar table  .zzz th  {
+  text-align: left;
+  top:0px;
+  position: sticky;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.div_center{
+  margin-left: auto;
+  margin-right: auto;
+  width: 6em
+}

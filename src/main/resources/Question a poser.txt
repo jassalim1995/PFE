@@ -1,0 +1,21 @@
+1- Pour les framework je doit spécifier chaque tech interne utilisée ? java boostrap typescript php css exc ? les biblio utlisé ?
+2- Pour le diag séqaunce c'est ou et qaund ? (à chaque sprint je présume) 
+3- la validation technique c'est qaund ?
+4- Spring ou spring boot pour les technologies
+5- couche metier je mentionne quoi exacetement ?
+6- API REST je la montionne ou ? couche présentation ? si c'est non j'y met quoi ? 
+7- dans l'architecture logique (shema) l http client il est dans l'angular ou entre l angular(services) et le spring boot (spring rest controlleur )
+8- Architecture physique 2-tier ou 3-tier ?
+
+
+
+
+x- attestation de présence ou prolengement de d'inscri pour le visa 
+-couche metier :
+
+
+
+
+
+
+
