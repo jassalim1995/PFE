@@ -211,16 +211,18 @@ public class PlanificationController {
 	
 		return Files.readAllBytes( Paths.get(getClass().getClassLoader().getResource(fileName).toURI()));
 	}
-	 public static String uploadDirectory = System.getProperty("user.dir")+"/src/main/resources/";
+	 public static String uploadDirectory ="C:/Users/Salim/Desktop/back/src/main/resources/";
 	
 	
 		@PostMapping("/upload")
 		public ResponseEntity<Object> uploadFile(@RequestParam("file") MultipartFile file) throws IOException {
 			File convertFile = new File(uploadDirectory+file.getOriginalFilename());
+			System.out.println("Current working directory in Java : " + uploadDirectory);
 			convertFile.createNewFile();
 			FileOutputStream fout = new FileOutputStream(convertFile);
 			fout.write(file.getBytes());
 			fout.close();
+			
 			return new ResponseEntity<>("File is uploaded successfully", HttpStatus.OK);
 		}
 

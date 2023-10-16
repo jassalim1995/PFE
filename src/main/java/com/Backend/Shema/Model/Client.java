@@ -23,6 +23,7 @@ public class Client {
 	private String adresse;
 	private String cp;
 	private String ville;
+	private List<Note>NoteList=new ArrayList<>();
 	public String getId() {
 		return id;
 	}
@@ -31,6 +32,30 @@ public class Client {
 	}
 	public String getActivite() {
 		return activite;
+	}
+	public Client(String id, String activite, String client, String contact, String titre, String fonction,
+			String secteur, String telephone, String email, String adresse, String cp, String ville,
+			List<Note> noteList) {
+		super();
+		this.id = id;
+		this.activite = activite;
+		this.client = client;
+		this.contact = contact;
+		this.titre = titre;
+		this.fonction = fonction;
+		this.secteur = secteur;
+		this.telephone = telephone;
+		this.email = email;
+		this.adresse = adresse;
+		this.cp = cp;
+		this.ville = ville;
+		NoteList = noteList;
+	}
+	public List<Note> getNoteList() {
+		return NoteList;
+	}
+	public void setNoteList(List<Note> noteList) {
+		NoteList = noteList;
 	}
 	public void setActivite(String activite) {
 		this.activite = activite;

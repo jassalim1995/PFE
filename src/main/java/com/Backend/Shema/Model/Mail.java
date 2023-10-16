@@ -30,11 +30,11 @@ public class Mail {
 			{
 				protected PasswordAuthentication getPasswordAuthentication()
 				{
-					return new PasswordAuthentication("itns.mdp@gmail.com", "azerty123$");
+					return new PasswordAuthentication("itns.services.mdp@gmail.com", "zhpl pmvg qzmt dobi");
 				}
 			});
 			Message msg = new MimeMessage(session);
-			msg.setFrom(new InternetAddress("itns.mdp@gmail.com", false));
+			msg.setFrom(new InternetAddress("itns.services.mdp@gmail.com", false));
 
 			msg.setRecipients(Message.RecipientType.TO,
 					InternetAddress.parse(emailRecever));
@@ -42,7 +42,8 @@ public class Mail {
 			msg.setSentDate(new Date());
 
 			MimeBodyPart messageBodyPart = new MimeBodyPart();
-			messageBodyPart.setContent("Bonjour Utilisateur \n Votre mot de passe est : "+mdp+". \n Cordialement",
+			messageBodyPart.setContent("Bonjour Utilisateur "+"\n\r Nous avons reçu une demande de récupération de mot de passe pour votre compte. Pour récupérer votre mot de passe, veuillez scanner le code QR ci-dessous :"
+					+  "\n\r Cordialement",
 					"text/html");
 
 			Multipart multipart = new MimeMultipart();

@@ -122,7 +122,7 @@ public class Minstallation {
 		if (valide == null) {
 			if (other.valide != null)
 				return false;
-		} else if (!valide.equals(other.valide))
+		} else if (!valide.equals(other.valide)) 
 			return false;
 		return true;
 	}
